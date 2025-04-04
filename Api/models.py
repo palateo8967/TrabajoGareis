@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models    
 
 # Create your models here.
 
@@ -11,6 +11,7 @@ class Productos(models.Model):
     Descripcion=models.TextField(max_length=100)
     # RETORNA LA LLAVE PRIMARIA 
     # PARA DETECTARLA MAS RAPIDO   
-    def __int__(self):
+    def __str__(self):
+
         self.Codigo
     

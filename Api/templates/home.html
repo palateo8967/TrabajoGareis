@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    
+    {% for producto in Productos %}
+    <div>
+        <h2>{{ producto.Nombre }}</h2>
+        <p>{{ producto.Descripcion }}</p>
+        <p>Precio: ${{ producto.Precio }}</p>
+    </div>
+    {% empty %}
+    {% endfor %}
+
+    <a href="{% url 'agregarProducto' %}">Agregar Producto</a>
+    <a href="{% url 'listaProductos' %}">Ver Productos</a>
+ 
+</body>
+</html>

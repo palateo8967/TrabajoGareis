@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+
+    {% if productos %}
+        {% for producto in productos %}
+            <div>
+                <h2>{{ producto.Nombre }}</h2>
+                <p><strong>Código:</strong> {{ producto.Codigo }}</p>
+                <p><strong>Precio:</strong> ${{ producto.Precio }}</p>
+                <p><strong>Marca:</strong> {{ producto.Marca }}</p>
+                <p><strong>Descripción:</strong> {{ producto.Descripcion }}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No hay productos disponibles.</p>
+    {% endif %}
+
+    <a href="{% url 'agregarProducto' %}">Agregar Producto</a>
+</body>
+</html>
