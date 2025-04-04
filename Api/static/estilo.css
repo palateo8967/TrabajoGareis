@@ -47,9 +47,42 @@ body {
 
 .elec{
     font-size: 70px;
-    margin: 30px;
+    margin: 25px;
 }
 
 .elec2{
-    font-size: 30px;
+    font-size: 30px;    
+    margin: 0 30px 30px 35px;
+}
+
+.sup{
+    justify-content: space-between;
+    display: flex;
+}
+
+.service{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(233, 230, 230);
+}
+
+.texto1 p{
+    margin-bottom: 20px;
+    padding: 20px;
+    color: blue;
+}
+
+.texto1 a{
+    color: white;
+    padding: 10px;
+    background-color: rgb(43, 39, 39);
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 1s;
+    margin-left: 30px;
+}
+
+.texto1 a:hover{
+    background-color: rgb(83, 80, 80);  
 }
