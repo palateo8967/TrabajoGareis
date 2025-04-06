@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+    /* #30552d verde oscuro
+    #589798 azul mas claro
+    #315580 Azul oscuro
+    #0c1016 negro
+    #646464 gris */
+
+.Cuerpo{
+    padding: 20px;
+
+}
+
+.FormAgregar{
+    height: 450px;
+    width: 750px;
+    padding: 15px;
+    background-color: #315580;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    border-radius: 10px;
+
+    transition: all .3s ease-in-out;
+    filter: drop-shadow(5px 5px 5px grey);
+
+    opacity: 0;
+    transform: translateX(900px);
+    animation:  FormDerecha 1.5s linear forwards;
+
+}
+
+@keyframes FormDerecha{
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+        
+}
+
+.FormAgregar:hover{
+    filter: drop-shadow(10px 10px 10px black);
+    transition: all .3s ease-in-out;
+
+}
+
+.FormAgregar div{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+
+}
+
+.FormAgregar div h1{
+    color: #0c1016;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.FormAgregar div label{
+    color: #0c1016;
+    font-size: 20px;
+
+}
+
+.FormAgregar div input{
+    font-size: 18px;
+    color: #0c1016;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.FormAgregar div textarea{
+    height: 40px;
+    width: 100%;
+    color: #0c1016;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.btnAgregar{
+    background-color: #646464;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 18px;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    transition: all .7s;
+
+}
+
+.btnAgregar:hover{
+    transition: all .7s ease-in-out;
+    transform: translateY(-3px);
+    background-color: white;
+    color: #646464;
+
+}
+
+.btnAgregar:active{
+    transform: translateY(2px);
+    background-color: #315580;
+
+}
+
+.FormAgregar div img{
+    height: 200px;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 80px;
+
+}
+
