@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+    /* #30552d verde oscuro
+    #589798 azul mas claro
+    #315580 Azul oscuro
+    #0c1016 negro
+    #646464 gris */
+
+.Cuerpo{
+    padding: 20px 0 20px 0;
+
+}
+
+.FormAgregar{
+    height: 450px;
+    width: 750px;
+    padding: 15px;
+    background-color: #315580;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    border-radius: 10px;
+
+    transition: all .3s ease-in-out;
+    filter: drop-shadow(5px 5px 5px grey);
+
+    opacity: 0;
+    transform: translateX(900px);
+    animation:  FormDerecha 1.5s linear forwards;
+
+}
+
+@keyframes FormDerecha{
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+        
+}
+
+.FormAgregar:hover{
+    filter: drop-shadow(10px 10px 10px black);
+    transition: all .3s ease-in-out;
+
+}
+
+.FormAgregar div{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+
+}
+
+.FormAgregar div h1{
+    color: #0c1016;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.FormAgregar div label{
+    color: #0c1016;
+    font-size: 20px;
+
+}
+
+.FormAgregar div input{
+    font-size: 18px;
+    color: #0c1016;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.FormAgregar div textarea{
+    height: 40px;
+    width: 100%;
+    color: #0c1016;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.btnAgregar{
+    background-color: #646464;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 18px;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    transition: all .7s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+
+}
+
+.btnAgregar:hover{
+    transition: all .3s ease-in-out;
+    transform: translateY(-3px);
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.btnAgregar:active{
+    transform: translateY(1px);
+    background-color: #0c1016;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    transition: all .3s ease;
+
+}
+
+.FormAgregar div img{
+    height: 200px;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 80px;
+
+}
+/* LISTA PRODUCTOS */
+.ContenedorLista{
+    background-color: #0c1016;
+    height: auto;
+    width: 1366px;
+    padding: 20px;
+
+}
+
+.ContenedorLista div h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+}
+
+.ContenedorLista div p{
+    font-size: 18px;
+
+}
+
+.Acomodar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.Tarjeta{
+    height: auto;
+    width: 300px;
+    background-color: #646464;
+    color: black;
+    border-radius: 10px;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Tarjeta h2{
+    font-size: 25px;
+    line-height: 50px;
+
+}
+
+.Tarjeta p{
+    line-height: 40px;
+
+}
+
+.Tarjeta strong{
+    font-size: 18px;
+
+}
+
+.Tarjeta hr{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.AgregarProducto{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 100px;
+    color: #F5EDED;
+    position: relative;
+
+}
+
+.AgregarProducto::after{
+    /* Para que no tenga nada de contenido */
+    content: '';
+    /* Noc para que */
+    position: absolute;
+    /* Arranca en la izquierda 0 */
+    left: 0;
+    /* Baja la linea para que no sea tan pegada */
+    bottom: -5px;
+    /* Arranca en 0 el ancho para que no se vea */
+    width: 0;
+    /* Alto de la linea */
+    height: 3px; 
+    background-color: #315580; 
+    transition: 0.3s ease-in-out;
+
+}
+
+.AgregarProducto:hover::after{
+    /* Al pasasr se completa el ancho */
+    width: 100%;
+
+}
+
