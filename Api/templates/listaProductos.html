@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Productos</title>
-    <link rel="stylesheet" href="{% static 'Ivan.css' %}">
+    <link rel="stylesheet" href="{% static 'ivan.css' %}">
 </head>
 <body>
     {% block content %}
+
+    <div class="navar">
+
+        <img src="{% static '/image/logo.png' %}" alt="logo">
+
+        <div class="links">
+
+            <a href="{% url 'home' %}">Inicio</a>
+            <a href="{% url 'agregarProducto' %}">Agregar Producto</a>
+            <a href="{% url 'listaProductos' %}">Ver Productos</a>
+
+        </div>
+
+    </div>  
+
     <main class="Cuerpo">
         <section class="ContenedorLista">
             <div>

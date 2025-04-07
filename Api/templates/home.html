@@ -1,10 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
 </head>
 
 <body>
@@ -15,6 +17,7 @@
 
         <div class="links">
 
+            <a href="{% url 'home' %}">Inicio</a>
             <a href="{% url 'agregarProducto' %}">Agregar Producto</a>
             <a href="{% url 'listaProductos' %}">Ver Productos</a>
 
@@ -24,83 +27,119 @@
 
     <div class="main">
 
-        <h1 class="elec">Electronic Shop</h1>
-
-        <h2 class="elec2">Bienvenido a Electronic Shop</h2>
+        <h1 class="elec">Bienvenidos a Electronic Shop</h1>
 
         <div class="sup">
 
             <div class="texto1">
 
                 <p>Somos una empresa líder en la venta de productos electrónicos de alta calidad. Ofrecemos una amplia
-                    gama de
-                    dispositivos electrónicos de las mejores marcas a precios competitivos.</p>
+                    gama de dispositivos electrónicos de las mejores marcas a precios competitivos.</p> <br>
 
-                <p>Somos una empresa líder en la venta de productos electrónicos de alta calidad. Ofrecemos una amplia
-                    gama de
-                    dispositivos electrónicos de las mejores marcas a precios competitivos.</p>
+                <p>Nuestro compromiso es brindar la mejor experiencia de compra con atención personalizada y productos
+                    garantizados.</p> <br>
 
-                    <a href="{% url 'listaProductos' %}">Ver Productos</a>
+                <a href="{% url 'listaProductos' %}" class="btnProductos">Ver Productos</a>
 
             </div>
 
             <div class="service">
+                 
+                <div class="ade">
 
-                <h2>Nuestros Servicios</h2>
-                <li> Venta de productos electrónicos</li>
-                <li>Servicio técnico especializado</li>
-                <li>Asesoramiento personalizado</li>
-                <li>Garantía en todos nuestros productos</li>
+                    <h2>Nuestros Servicios</h2>
+                 
+                    <ul>
+    
+                        <li>Venta de productos electrónicos</li>
+                        <li>Servicio técnico especializado</li>
+                        <li>Asesoramiento personalizado</li>
+                        <li>Garantía en todos nuestros productos</li>
+    
+                    </ul>
+
+                </div>
 
             </div>
 
-
         </div>
 
     </div>
 
-    <h1>¿Por que elegirnos?</h1>
+
 
     <div class="promo">
 
-        <h1>Promociones Destacadas</h1>
+        <h2>Promociones Destacadas</h2>
 
         <div class="tarPromo">
 
-            <h2>Promocion 1</h2>
-            <p></p>
+            <div class="card">
+
+                <h3>Promoción 1</h3>
+                <p>Pagando con Tarjeta de debito 15% de Descuento</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Promoción 2</h3>
+                <p>Pagando con Efectivo 20% de Descuento</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Promoción 3</h3>
+                <p>Con la compra de un SAMSUNG s24 ULTRA te llevas auriculares Bluetoh</p>
+
+            </div>
+            
+            <div class="card">
+
+                <h3>Promoción 3</h3>
+                <p>3x2 en accesorios para computadoras</p>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="por">
 
-        <h2>Calidad garantisada</h2>
-        <p>Todos nuestros productos cuentan con garantias y son de las mejores marcas del mercado</p>
+    <div class="promo">
 
-    </div>
+        <h2>¿Por qué elegirnos?</h2>
 
-    <div class="por">
+        <div class="porContainer">
 
-        <h2>Precios Competitivo</h2>
-        <p>Ofrecemos los mejores precios del mercado y promociones excluivas para nuestros clientes</p>
+            <div class="por">
 
-    </div>
+                <h3>Calidad Garantizada</h3>
+                <p>Todos nuestros productos cuentan con garantía y son de las mejores marcas del mercado.</p>
 
-    <div class="por">
+            </div>
 
-        <h2>Calidad garantisada</h2>
-        <p>Todos nuestros productos cuentan con garantias y son de las mejores marcas del mercado</p>
+            <div class="por">
+                
+                <h3>Precios Competitivos</h3>
+                <p>Ofrecemos los mejores precios del mercado y promociones exclusivas para nuestros clientes.</p>
+
+            </div>
+
+            <div class="por">
+
+                <h3>Atención Personalizada</h3>
+                <p>Nuestro equipo de expertos está disponible para asesorarte en tu compra.</p>
+
+            </div>
+
+        </div>
 
     </div>
 
     <footer>
 
         <p>© 2023 Electronic Shop. Todos los derechos reservados.</p>
-
+        
     </footer>
-
-</body>
-
-</html>
